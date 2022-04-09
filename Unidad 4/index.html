@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+	
+	<link href="styles/styles.css" rel="stylesheet">
+
+    <title>Sebasti&aacute;n Loscalzo</title>
+  </head>
+  <body>
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+	<div class="d-flex justify-content-center">
+
+		<div class="d-flex flex-column bd-highlight mb-3 border">
+	
+		<div class="fondo">
+			<div class="d-flex justify-content-start foto-content"><img class="foto" src="images/foto.jpg" /></div>
+		</div>
+
+		<div class="info">
+			<h4>Sebastián E. Loscalzo</h4>
+			<div><span>13/06/1976 - Casado - 2 hijos</span></div>
+			<div><span>Cnel. Ramón L. Falcón 1336 1º A, CABA</span></div>
+			<div><span>15-3911-5295 - sebaloscalzo@hotmail.com</span></div>
+		</div>
+
+		<div class="series">
+			<h6>Series Preferidas</h6>
+			<ul>
+				<li>Vikingos</li>
+				<li>El Juego del Calamar</li>
+				<li>Peaky Blinders</li>
+			</ul>
+		</div>
+
+		<div style="margin-left: 18px;">
+			<h6>Películas Preferidas</h6>
+			<ul>
+				<li>Volver al Futuro</li>
+				<li>Rescatando al Soldado Ryan</li>
+				<li>Spiderman</li>
+			</ul>
+		</div>
+
+		<div style="margin-left: 18px;">
+			<h6>Mi Perfil</h6>
+			<p>Me gusta hacer hacer algun tipo de activdad para despejar mi mente, por ej. ver series y peliculas.</p>
+			<p>Antes me gustaba ir al gimnasio pero ahora debo conformarme con hacerlo en casa por razones de tiempo.</p>
+			<p>Al contrario de lo que pensaba a los 20 años, ya no me gusta trabajar en mi casa todos los días.</p>
+		</div>
+
+		<div class="contacto">
+			<h6>Contacto</h6>
+			<p>Si queres contactarme podes completar el siguiente <a href="cv.html" data-bs-toggle="modal" data-bs-target="#exampleModal">formulario</a>.</p>
+		</div>
+
+		<br>
+
+	</div>
+
+	<!-- Modal -->
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+		<div class="modal-content">
+			
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Contactar a Sebastián</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			
+			<div class="modal-body">
+
+				<form id="my-form" action="https://formspree.io/f/mwkynanq" method="POST">
+
+					<div class="mb-3">
+						<label for="nombre" class="form-label"><span style="color: red">*</span> Tu Nombre:</label>
+						<input type="text" class="form-control" id="nombre" name="nombre" required>
+					</div>
+					<div class="mb-3">
+					  <label for="mail" class="form-label"><span style="color: red">*</span> Tu Email:</label>
+					  <input type="email" class="form-control" id="mail" name="mail" required>
+					</div>
+					<div class="mb-3">
+						<label for="asunto" class="form-label"><span style="color: red">*</span> Asunto:</label>
+						<input type="text" class="form-control" id="asunto" name="asunto" required>
+					</div>
+					<div class="mb-3">
+						<label for="mensaje" class="form-label"><span style="color: red">*</span> Mensaje:</label>
+						<textarea class="form-control" id="mensaje"  name="mensaje" required></textarea>
+					</div>
+					<div class="mb-3">
+						<label for="mensaje" class="form-label"><span style="color: red">* Campos requeridos</span></label>
+					</div>
+					<button type="submit" id="button.submit" class="btn btn-primary" >Enviar</button>
+				
+				</form>
+
+			</div>
+
+			<div style="display:none" id="my-form-status" class="alert alert-success fade show" role="alert">
+				El mensaje fue enviado con éxito.
+			</div>
+		</div>
+		</div>
+	</div>
+
+
+	<script src="scripts/scripts.js"></script>
+
+  </body>
+</html>
