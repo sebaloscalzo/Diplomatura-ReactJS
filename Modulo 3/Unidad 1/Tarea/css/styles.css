@@ -1,0 +1,31 @@
+.tab-content {
+	padding: 20px;
+}
+
+.form-group, .form-check {
+	padding: 10px;
+	padding-top: 0px;
+}
+
+main {
+	padding: 15px;
+}
+
+.bg-dark {
+	background-color: #2E2C35!important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	color: #fff;
+	background-color: #4E5B51;
+	border: solid 1px #95837A !important;
+}
+
+.nav-link {
+	color: #9FA090;
+	border: solid 1px transparent !important;
+}
+
+.nav-link:focus, .nav-link:hover {
+	color: #8B8974;
+}

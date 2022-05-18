@@ -1,0 +1,17 @@
+Registro de Pagos - https://sebastian-loscalzo.000webhostapp.com/
+
+Inicio (ultimos pagos realizados)
+Servicios (ABM de servicios)
+Pagos (ABM de pagos)
+Destinatarios (ABM de destinatarios)
+Templates (ABM de templates)
+
+Descripcion:
+Registro de Pagos sera un website personal para guardar informacion acerca de los pagos de los servicios relizados.
+El mismo permitira ademas de guardar la infornmacion del pago, el envio del comprobante por correo electronico a quien lo requiera.
+
+Inicio - Muestra los ultimos pagos realizados ordenados por fecha descendente
+Servicios - Permite crear, modificar o eliminar un servicio.
+Pagos - Permite crear, modificar o eliminar la informnacion del pago de un servicio.
+Destinatarios - Permite crear, modificar o eliminar detinatarios que recibiran por correo la informacion del pago.
+Templates - Permite crear, modificar o eliminar una plantilla predefinida el texto del correo electronico a enviar.
