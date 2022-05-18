@@ -27,14 +27,27 @@ main {
 	color: #fff;
 	background-color: #4E5B51;
 	border: solid 1px #95837A !important;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .nav-link {
 	color: #9FA090;
 	border: solid 1px transparent !important;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
 }
 
 .nav-link:focus, .nav-link:hover {
 	color: #8B8974;
 }
 
+.card-img-top {
+	width: 100px;
+}
+
+.logo {
+	width: 225px;
+}
