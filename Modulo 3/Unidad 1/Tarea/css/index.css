@@ -1,0 +1,35 @@
+.pago {
+	color:green;
+}
+
+.impago {
+	color:red;
+}
+
+.card-container {
+	display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+  	justify-content: flex-start;
+}
+
+.card {
+	border-radius: 10px;
+	border: solid 1px #9FA090;
+	margin: 10px;
+}
+
+.img-top {
+  	display: flex;
+  	flex-direction: row;
+  	flex-wrap: nowrap;
+  	align-content: center;
+  	align-items: center;
+	min-height: 50px !important; 
+	padding: 15px; 
+	padding-bottom: 0px;
+}
+
+.card-img-top {
+	width: 100px;
+}

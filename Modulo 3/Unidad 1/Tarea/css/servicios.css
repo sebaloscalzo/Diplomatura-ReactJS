@@ -1,0 +1,11 @@
+.form-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;	
+	align-items: flex-end;
+}
+
+.control {
+	padding: 10px;
+	width: 400px;
+}

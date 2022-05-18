@@ -11,6 +11,7 @@
 	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
 	
 	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/servicios.css" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 
 	<!-- Option 1: Bootstrap Bundle with Popper -->
@@ -55,7 +56,20 @@
 	</nav>
 
 	<main>
-		Servicios
+		<div style="padding: 12px"><h5>Agregar un servicio</h5></div>
+		<form><div class="form-container">
+			<div class="control">
+			  <label for="proveedor" class="form-label">Nombre Proveedor</label>
+			  <input type="text" class="form-control" id="proveedor">
+			</div>
+			<div class="control">
+			  <label for="imagen" class="form-label">Imagen Logo</label>
+			  <input class="form-control" id="imagen" type="file">
+			</div>
+			<div class="control">
+				<button type="submit" class="btn btn-primary">Agregar</button>
+			</div>
+		</div></form>
 	</main>
 
 
