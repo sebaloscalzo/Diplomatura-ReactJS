@@ -1,0 +1,25 @@
+.control-row {
+	padding: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.left {
+	width: 50%;
+	padding-right: 5px;
+}
+
+.right {
+	width: 50%;
+	padding-left: 5px;
+}
+
+.monto {
+	width: 30%;
+	padding-right: 5px;
+}
+
+.titular {
+	width: 70%;
+	padding-left: 5px;
+}

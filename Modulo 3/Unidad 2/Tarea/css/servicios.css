@@ -1,0 +1,20 @@
+.form-container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;	
+	align-items: flex-end;
+}
+
+.title {
+	padding: 12px; 
+	padding-bottom: 0px;
+}
+
+.table>:not(:last-child)>:last-child>* {
+	border-bottom-color: lightgray;
+}
+
+tbody, td, tfoot, th, thead, tr {
+	height: 64px;
+	vertical-align: middle;
+}
