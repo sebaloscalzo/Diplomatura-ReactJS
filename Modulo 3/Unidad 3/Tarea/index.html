@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+		
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/index.css" rel="stylesheet">
+	
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+		<script src="js/scripts.js"></script>
+	
+    	<title>Ejericcio 1</title>
+  	</head>
+  	<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<div class="navbar-brand" href="#">
+				M.3.U.3
+			</div>
+			
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				<ul class="nav nav-pills" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" aria-current="page" href="#">Ejercicio 1</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="ejercicio2.html">Ejercicio 2</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+	<main>
+		<div style="padding: 12px"><h5>Ejercicio 1</h5></div>
+
+		<form style="width: 480px;">
+			<div class="control">
+				<label for="proveedor" class="form-label">Distancia a recorrer</label>
+				<select class="form-select" id="distancia" onchange="distanciaChanged(event)">
+					<option selected disabled>Elija una opcion</option>
+					<option value="1000">menos de 1.000 metros</option>
+					<option value="10000">1.000 a 10.000 metros</option>
+					<option value="30000">10.000 a 30.000 metros</option>
+					<option value="100000">30.000 a 100.000 metros</option>
+					<option value="100001">más de 100.000 metros</option>
+				</select>
+			</div>
+			<br>
+			<div class="control">
+				<h6>
+					<span>Opción elegida: </span>
+					<span id="lblSelected">Ninguna</span>
+					<br>
+					<span>Transporte sugerido: </span>
+					<span id="lblTransporte">Ninguno</span>
+				</h6>
+			</div>
+		</form>
+
+	</div>
+	</main>
+
+
+</body>
+</html>
