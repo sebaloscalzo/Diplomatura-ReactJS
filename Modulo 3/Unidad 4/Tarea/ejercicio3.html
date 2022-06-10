@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+	
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+		<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet" />
+		
+		<link href="css/styles.css" rel="stylesheet">
+		<link href="css/normalize.css" rel="stylesheet">
+		<link href="css/ejercicio3.css" rel="stylesheet">
+	
+		<!-- jQuery -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	
+		<script src="js/scripts.js"></script>
+	
+    <title>Ejercicio 3</title>
+	</head>
+	<body>
+
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container-fluid">
+			<div class="navbar-brand" href="#">
+				M.3.U.4
+			</div>
+
+		  	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+				<ul class="nav nav-pills" id="pills-tab" role="tablist">
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="index.html">Ejercicio 1</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link" href="ejercicio2.html">Ejercicio 2</a>
+					</li>
+					<li class="nav-item" role="presentation">
+						<a class="nav-link active" aria-current="page" href="#">Ejercicio 3</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+
+	<main style="max-width:600px">
+		<div style="padding: 12px">
+			<h5>Ejercicio 3</h5>
+			<h7>Mostrar los alumnos aprobados</h7>
+		</div>
+
+		<div style="padding:12px">
+			<div >
+				<table class="alumnos">
+					<tbody>
+					<tr>
+						<th class="nombre">Nombre del alumno</th><th class="calif">Calificacion</th><th class="estado">Estado</th>
+					</tr>
+					<tr>
+						<td class="nombre"><span>Juan Gomez</span></td>
+						<td class="calif"><span>7</span></td>
+						<td class="estado"><span id="estado1">-</span></td>
+					</tr>
+					<tr>
+						<td class="nombre"><span>Pedro Rodriguez</span></td>
+						<td class="calif"><span>4</span></td>
+						<td class="estado"><span id="estado2">-</span></td>
+					</tr>
+					<tr>
+						<td class="nombre"><span>Roxana Garcia</span></td>
+						<td class="calif"><span>8</span></td>
+						<td class="estado"><span id="estado3">-</span></td>
+					</tr>
+					<tr>
+						<td class="nombre"><span>Luciano Lopez</span></td>
+						<td class="calif"><span>5</span></td>
+						<td class="estado"><span id="estado4">-</span></td>
+					</tr>
+					<tr>
+						<td class="nombre"><span>Fernanda Gimenez</span></td>
+						<td class="calif"><span>6</span></td>
+						<td class="estado"><span id="estado5">-</span></td>
+					</tr>
+					<tr>
+						<td class="nombre"><span>Florencia Martinez</span></td>
+						<td class="calif"><span>10</span></td>
+						<td class="estado"><span id="estado6">-</span></td>
+					</tr>
+					<tr>
+						<td class="nombre"><span>Raul Sanchez</span></td>
+						<td class="calif"><span>7</span></td>
+						<td class="estado"><span id="estado7">-</span></td>
+					</tr>
+					<tr>
+						<td class="nombre"><span>Sandra Figueroa</span></td>
+						<td class="calif"><span>8</span></td>
+						<td class="estado"><span id="estado8">-</span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+		<br>
+		<div >
+			<button type="button" class="btn btn-primary" onclick="process()">Procesar Calificaciones</button>
+		</div>
+	</main>
+
+
+</body>
+</html>

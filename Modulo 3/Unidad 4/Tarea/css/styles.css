@@ -1,0 +1,66 @@
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+.tab-content {
+	padding: 20px;
+}
+
+.form-group, .form-check {
+	padding: 10px;
+	padding-top: 0px;
+}
+
+main {
+	padding: 15px;
+}
+
+.bg-dark {
+	background-color: #2E2C35!important;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	color: #fff;
+	background-color: #4E5B51;
+	border: solid 1px #95837A !important;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.nav-link {
+	color: #9FA090;
+	border: solid 1px transparent !important;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.nav-link:focus, .nav-link:hover {
+	color: #8B8974;
+}
+
+.navbar-brand {
+	font-family: 'Courier New', Courier, monospace;
+	font-weight: bold;
+	font-size: 24px;
+	padding-left: 18px;
+}
+
+.control-row {
+	display: flex;
+	justify-content: flex-end;
+	margin-top: 10px;
+	width: 100%;
+}
+
+.text {
+	width: 640px;
+	height: 120px;
+	margin-right: 10px;
+	
+}
