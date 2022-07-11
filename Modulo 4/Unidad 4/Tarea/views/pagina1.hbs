@@ -1,0 +1,33 @@
+<form action="pagina1" method="post">
+
+	<div class="label"><label for="nombre">Nombre y Apellido</label></div>
+	<input type="text" name="nombre" />
+	<input type="submit" value="Enviar">
+
+	<br><br>
+
+	<div class="label"><label for="fechaNac">Fecha Nacimiento</label></div>
+	<input type="date" name="fechaNac" />
+	<input type="submit" value="Enviar">
+	
+	<br><br>
+
+	<div class="label"><label for="pass">Contraseña</label></div>
+	<input type="password" name="pass" />
+	<input type="submit" value="Enviar">
+
+</form>
+
+<br><br>
+
+{{#if nombre}}
+	Bienvenido {{nombre}}
+{{/if}}
+
+{{#if edad}}
+	Usted tiene {{edad}} años
+{{/if}}
+
+{{#if contrasenia}}
+	La contrasña ingresada es {{contrasenia}}
+{{/if}}
