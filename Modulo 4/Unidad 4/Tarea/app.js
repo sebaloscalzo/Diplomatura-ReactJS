@@ -5,7 +5,6 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 
 var indexRouter = require('./routes/index');
-var plantillaRouter = require('./routes/plantilla');
 var pagina1Router = require('./routes/pagina1');
 
 var app = express();
@@ -21,7 +20,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
-app.use('/', plantillaRouter);
 app.use('/', pagina1Router);
 
 // const session = require('express-session');
