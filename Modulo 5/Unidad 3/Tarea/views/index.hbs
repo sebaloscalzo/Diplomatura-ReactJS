@@ -1,0 +1,35 @@
+<h2>Lista de Empleados</h2>
+
+<form action="/" method="post">
+
+	<input type="submit" value="Consultar">
+
+</form>
+
+<p>
+	{{#if empleados}}
+		<div class="container">
+		<table class="table">
+			<td class="title">ID</td>
+			<td class="title">Nombre</td>
+			<td class="title">Apellido</td>
+			<td class="title">Edad</td>
+			<td class="title">Salario</td>
+			<td class="title">Mail</td>
+			{{#each empleados}}
+				<tr>
+					<td class="data">{{ id }}</td>
+					<td class="data">{{ nombre }}</td>
+					<td class="data">{{ apellido }}</td>
+					<td class="data">{{ edad }}</td>
+					<td class="data">{{ salario }}</td>
+					<td class="data">{{ mail }}</td>
+				</tr>
+			{{/each}} 			
+		</table>
+		</div>
+	{{/if}}
+	{{#if error}}
+		<div>{{ error }}</div>
+	{{/if}}
+</p>
