@@ -1,0 +1,31 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  background-image: url(../images/background9.jpg);
+  background-size: cover;
+}
+
+main {
+  text-align: center;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.label {
+  height: 24px;
+}
+
+.landing {
+  color:#ffae00;
+}
+
+.menu {
+  background-color: #404040;
+}
