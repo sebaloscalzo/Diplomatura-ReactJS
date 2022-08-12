@@ -1,0 +1,15 @@
+La implementacion del ABM de productos lo haria como esta explicado en el documento de la clase.
+Una url para cada operacion invocando a los queries correspondientes.
+
+Mostrar lista de productos
+GET /admin/productos
+
+Insertar un producto
+POST /admin/productos/insert
+
+Eliminar un producto
+GET /admin/productos/delete/{{id}}
+
+Modificar un producto
+POST /admin/productos/update/{{id}}
+
