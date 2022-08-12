@@ -1,0 +1,12 @@
+Voy a continuar con la tematica de la cerveceria porque ya tengo armado el layout de la misma.
+La seccion dinamica va a ser el ABM de productos (bebidas y comidas).
+El sitio estaria dividido en la parte que el usuario final puede acceder sin loguearse y la parte backoffice
+para que el usuario administrativo cargue los datos que alimentara la parte publica.
+
+Tabla productos
+id				int				not null	PK
+nombre			varchar(50)		not null
+descripcion		varchar(50)		not null
+precio			float			not null
+imagen			varchar(50)		null		(se guarda el path de la imagen)
+stock			int				null		(a implementar el control de stock)
