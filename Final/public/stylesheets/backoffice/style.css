@@ -1,0 +1,56 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  /* align-items: center; */
+  background-image: url(../images/background9.jpg);
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.label {
+  height: 24px;
+}
+
+.menu {
+  background-color: #404040;
+}
+
+.logo-landing {
+  width: 250px;
+  opacity: .80;
+  /* margin-right: 10px; */
+}
+
+.main-container {
+  margin: 25px;
+}
+
+.card {
+  width: 18rem; 
+  min-height: 400px;
+  margin-bottom: 25px;
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.thumb {
+  display: block;
+  max-width: 100%;
+  max-height: 200px;
+  width: auto;
+  height: auto;
+}
+
+.form-producto {
+  max-width: 800px;
+  padding: 40px;
+}

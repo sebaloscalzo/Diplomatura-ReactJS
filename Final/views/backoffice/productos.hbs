@@ -1,0 +1,37 @@
+<!-- Begin page content -->
+<main class="flex-shrink-0 landing">
+  <div class="container">
+    <div style="margin-top: 180px; text-align: left;">
+
+        <h4 style="text-align:left;">Lista de Productos | <a href="producto?id=0&a=i">Agregar</a></h4>
+        
+        <table class="table" id="tProductos">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Nombre</th>
+              <th scope="col">Descripcion</th>
+              <th scope="col">Precio</th>
+              <th scope="col">&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            {{#each productos}}
+              <tr>
+                <td width="7%" scope="row">{{id}}</th>
+                <td width="15%">{{nombre}}</a></td>
+                <td width="*">{{descripcion}}</td>
+                <td width="10%">$ {{precio}}.00</td>
+                <td width="5%">
+                  <a href="producto?id={{id}}&a=u"><img src="../../images/edit.svg" alt="editar" width="16" height="16"></a>
+                  <a href="producto?id={{id}}&a=d"><img src="../../images/delete.svg" alt="borrar" width="16" height="16"></a>
+                </td>
+              </tr>
+            {{/each}}
+            </tr>
+          </tbody>
+        </table>
+
+    </div>
+  </div>
+</main>

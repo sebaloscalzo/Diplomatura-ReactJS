@@ -1,0 +1,58 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  /* align-items: center; */
+  background-image: url(../../images/background2.png);
+  background-size: cover;
+}
+
+.form-signin {
+  max-width: 400px;
+  padding: 40px;
+}
+
+.form-signin .form-floating:focus-within {
+  z-index: 2;
+}
+
+.form-signin input[type="text"] {
+  margin-bottom: -1px;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.form-signin input[type="password"] {
+  margin-bottom: 10px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.logo {
+  width: 148px;
+  opacity: .75;
+}
+
+.shadow {
+  box-shadow: 0px 8px 10px -5px rgb(0 0 0 / 20%), 0px 16px 24px 2px rgb(0 0 0 / 14%), 0px 6px 30px 5px rgb(0 0 0 / 12%) !important;
+}
+
+.error {
+  width: auto;
+  height: 24px;
+  color: brown;
+  margin: 20px;
+}
+
+.login {
+  background-color: #4d4d4d;
+  color: #ffae00;
+}
+
+.login:focus, .login:hover {
+  background-color: #404040;
+  color: #ffae00;
+}

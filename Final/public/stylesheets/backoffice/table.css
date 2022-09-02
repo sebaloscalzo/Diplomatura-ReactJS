@@ -1,0 +1,27 @@
+th, td {
+	opacity: .8;
+}
+
+td:first-child, th:first-child {
+	padding-left: 20px;
+}
+
+td:last-child, th:last-child {
+	padding-right: 20px; 
+	text-align: right;
+}
+
+tr:last-child > td {
+	border: none;
+}
+
+.wrapper {
+	max-width: 400px;
+}
+
+.short {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	max-width: 90%;
+  }

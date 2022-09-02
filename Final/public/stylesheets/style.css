@@ -1,0 +1,126 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  /* align-items: center; */
+  background-image: url(../images/background9.jpg);
+  background-size: cover;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.label {
+  height: 24px;
+}
+
+.texto {
+  color:white;
+  opacity: .80;
+}
+
+.texto-sh {
+  color:white;
+  opacity: .80;
+  text-shadow: 2px 2px #212529;
+}
+
+.title {
+  color: #ffae00;
+  opacity: .80;
+  margin: 25px; 
+  margin-top: 0px;
+  margin-left: 0px;
+}
+
+hr {
+  color: #ffae00;
+}
+
+.menu {
+  background-color: #404040;
+}
+
+.logo {
+  width: 200px;
+  opacity: .80;
+}
+
+.logo-landing {
+  width: 350px;
+}
+
+.main-container {
+  margin: 25px;
+}
+
+.card {
+  width: 18rem; 
+  min-height: 370px;
+  margin-bottom: 25px;
+  max-height: 370px;
+  opacity: .8;
+}
+
+.card-img {
+  border-radius: 6px; 
+  width: 100%; 
+  height:200px; 
+  background-size: cover; 
+  min-height: 200px;
+}
+
+.card-logo {
+  min-height: 200px;
+  border-radius: 6px; 
+  background-color: black; 
+  background-size: auto; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-image: url('../images/skol-logo3.png')
+}
+
+.card-text {
+  font-size: 14px;
+}
+
+.thumb {
+  width: 18rem; 
+  margin-bottom: 25px;
+  max-height: 400px;
+  opacity: .8;
+  border: solid 1px white;
+  border-radius: 6px; 
+}
+
+.form-producto {
+  max-width: 800px;
+  padding: 40px;
+  background-color: #212529;
+}
+
+.novedades {
+  background-color: white; 
+  opacity: .80; 
+  border-radius: 10px;
+}
+
+.card-ubicacion {
+  height: 500px;
+  width: 800px;
+  min-height: 200px;
+  border: #ffae00 solid 1px;
+  border-radius: 6px; 
+  background-size: auto; 
+  background-repeat: no-repeat; 
+  background-position: center; 
+  background-image: url('../images/ubicacion.jpg')
+}
+
+.btn-yellow {
+  background-color: #ffae00;
+}

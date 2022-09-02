@@ -1,0 +1,22 @@
+<div style="width: 100%; overflow-y:auto; padding: 25px">
+
+  <h2 class="title">| {{ title }} |</h2>
+
+  <div class="container"><div class="row">
+
+    {{#each productos}}
+
+      <div class="col-sm-3" style="text-align: -webkit-center;">
+        <div class="card">
+          <div class="card-img" style="background-image: url('../images/{{imagen}}.jpg')"></div>
+          <div class="card-body">
+            <h5 class="card-title">{{nombre}}</h5>
+            <p class="card-text">{{descripcion}}</p>
+          </div>
+        </div>
+      </div>
+
+    {{/each}}
+
+  </div></div>
+</div>

@@ -1,0 +1,82 @@
+<main class="flex-shrink-0">
+  <div class="container" style="max-width:600px">
+    <div style="margin-top: 180px; text-align: left;">
+
+		{{#if isDelete}}
+		<h4 style="text-align:left; color:red">¿ Desea eliminar {{producto.nombre}} ?</h4>
+		{{else if isUpdate}}
+		<h4 style="text-align:left;">Editar {{producto.nombre}}</h4>
+		{{else if isInsert}}
+		<h4 style="text-align:left;">Nuevo Producto</h4>
+		{{/if}}
+
+		<br>
+
+		<form action="/backoffice/producto" method="post">
+			
+			<input type="hidden" id="action" name="action" value="{{action}}" />
+
+			<div class="form-group row">
+				<label for="inputCodigo" class="col-sm-3 col-form-label" style="text-align: right;">Codigo</label>
+				<div class="col-sm-9">
+					<input type="text" readonly="true" class="form-control" id="inputCodigo" name="inputCodigo" placeholder="Codigo" value="{{producto.id}}">
+				</div>
+			</div>
+
+			<br>
+			<div class="form-group row">
+				<label for="inputNombre" class="col-sm-3 col-form-label" style="text-align: right;"><span style="color: red">*</span>&nbsp;Nombre</label>
+				<div class="col-sm-9">
+					<input type="text" class="form-control" id="inputNombre" name="inputNombre" placeholder="Nombre" 
+						value="{{producto.nombre}}" 
+						{{#if isDelete}}readonly="true"{{else}}required{{/if}}
+					>
+				</div>
+			</div>
+
+			<br>
+			<div class="form-group row">
+				<label for="inputDescripcion" class="col-sm-3 col-form-label" style="text-align: right;"><span style="color: red">*</span>&nbsp;Descripcion</label>
+				<div class="col-sm-9">
+					<textarea class="form-control" id="inputDescripcion" name="inputDescripcion" placeholder="Descripcion" rows="5" 
+						{{#if isDelete}}readonly="true"{{else}}required{{/if}}
+					>{{producto.descripcion}}</textarea>
+				</div>
+			</div>
+
+			<br>
+			<div class="form-group row">
+				<label for="inputPrecio" class="col-sm-3 col-form-label" style="text-align: right;"><span style="color: red">*</span>&nbsp;Precio</label>
+				<div class="col-sm-9">
+					<input type="number" class="form-control" id="inputPrecio" name="inputPrecio" placeholder="Precio" 
+						value="{{producto.precio}}" 
+						{{#if isDelete}}readonly="true"{{else}}required{{/if}}
+					>
+				</div>
+			</div>
+
+			<br>
+			<div class="form-group" style="text-align:right">
+
+				{{#if isDelete}}
+				<button class="btn btn-danger" type="submit">Eliminar</button>
+				{{else}}
+				<button class="btn btn-success" type="submit">Guardar</button>
+				{{/if}}
+				
+				<a class="btn btn-primary" href="productos" role="button">Cancelar</a>
+			</div>
+
+
+			{{#if error}}
+			<br>
+			<div class="alert alert-danger alert-dismissible fade show" role="alert">
+				<strong>Atención!</strong> Parece que se ha producido un error al guardar.
+				<button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+			</div>
+			{{/if}}
+		</form>
+	</div>
+  </div>
+
+</main>
