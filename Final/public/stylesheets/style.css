@@ -114,11 +114,22 @@ hr {
   width: 800px;
   min-height: 200px;
   border: #ffae00 solid 1px;
-  border-radius: 6px; 
+  border-radius: 10px; 
   background-size: auto; 
   background-repeat: no-repeat; 
   background-position: center; 
   background-image: url('../images/ubicacion.jpg')
+}
+
+.form-contact {
+  height: 530px;
+  width: 800px;
+  min-height: 200px;
+  border: #ffae00 solid 1px;
+  background-color: white;
+  opacity: .80; 
+  border-radius: 10px;
+  padding: 25px;
 }
 
 .btn-yellow {

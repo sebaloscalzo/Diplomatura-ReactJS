@@ -9,6 +9,7 @@ var cervezasRouter = require('./routes/cervezas');
 var novedadesRouter = require('./routes/novedades');
 var galeriaRouter = require('./routes/galeria');
 var ubicacionRouter = require('./routes/ubicacion');
+var contactoRouter = require('./routes/contacto');
 
 var loginRouter = require('./routes/backoffice/login');
 var landingRouter = require('./routes/backoffice/landing');
@@ -34,6 +35,7 @@ app.use('/', cervezasRouter);
 app.use('/', novedadesRouter);
 app.use('/', galeriaRouter);
 app.use('/', ubicacionRouter);
+app.use('/', contactoRouter);
 
 app.use('/', loginRouter);
 app.use('/', landingRouter);

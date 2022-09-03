@@ -1,0 +1,62 @@
+<div style="width: 100%; overflow-y:auto; padding: 25px">
+
+<h2 class="title">| {{ title }} |</h2>
+
+  <div class="container"><div class="row">
+    <div style="text-align: -webkit-center;">
+
+
+		<form class="form-contact" action="/contacto" method="post">
+
+      <h5 style="text-align: left">Completá el siguiente formulario para mandar tu consulta</h5>
+
+      <br>
+			<div class="form-group">
+				<label for="inputCodigo" class="col-sm-7 col-form-label" style="text-align: left"><span style="color: red">*</span>&nbsp;Nombre</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control col-sm-7" id="inputNombre" name="inputNombre" placeholder="Escribí aqui tu nombre" required>
+				</div>
+			</div>
+
+			<br>
+			<div class="form-group">
+				<label for="inputMail" class="col-sm-7 col-form-label" style="text-align: left"><span style="color: red">*</span>&nbsp;Correo Electrónico</label>
+				<div class="col-sm-7">
+					<input type="text" class="form-control col-sm-7" id="inputMail" name="inputMail" placeholder="¿ Cuál es tu correo ?" required>
+				</div>
+			</div>
+
+			<br>
+			<div class="form-group">
+				<label for="inputConsulta" class="col-sm-7 col-form-label" style="text-align: left"><span style="color: red">*</span>&nbsp;Consulta</label>
+				<div class="col-sm-7">
+					<textarea class="form-control" id="inputConsulta" name="inputConsulta" placeholder="¿ Qué querés consultarnos ?" rows="4" required></textarea>
+				</div>
+			</div>
+
+			<br>
+			<div class="form-group" >
+        <button class="btn btn-secondary" style="width: 150px" type="submit">Enviar</button>
+			</div>
+
+		</form>    
+
+    <br>
+
+    {{#if error}}
+    <div class="alert alert-danger alert-dismissible fade show" style="width: 800px" role="alert">
+      <strong>Atención!</strong> Parece que se ha producido un error al enviar la consulta.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {{/if}}
+    
+    {{#if enviado}}
+    <div class="alert alert-success alert-dismissible fade show" style="width: 800px" role="alert">
+      Tu consulta fue enviada con éxito, en breve nos contactaremos con vos.
+      <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+    </div>
+    {{/if}}
+
+  </div></div>
+
+</div>
