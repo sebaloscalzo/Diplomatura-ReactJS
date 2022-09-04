@@ -14,7 +14,7 @@ function getConfig() {
 			idleTimeoutMillis: 30000
 		},
 		options: {
-			encrypt: false, // for azure
+			encrypt: true, // for azure
 			trustServerCertificate: false // change to true for local dev / self-signed certs
 		}
 	};

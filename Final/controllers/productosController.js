@@ -19,7 +19,7 @@ exports.selectProductos = async () => {
 				rsProductos.recordset[i].imagen
 			);
 			if (pm.imagen == null) {
-				pm.imagen = pm.nombre;
+				pm.imagen = pm.nombre.toString().toLowerCase();
 			}
 			productos.push(pm);
 		}
@@ -42,7 +42,7 @@ exports.selectProducto = async (id) => {
 			rsProductos.recordset[0].imagen,
 		);
 		if (producto.imagen == null) {
-			producto.imagen = producto.nombre;
+			pm.imagen = pm.nombre.toString().toLowerCase();
 		}
 	return producto;
 	}
