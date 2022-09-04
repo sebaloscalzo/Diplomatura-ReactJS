@@ -12,7 +12,7 @@ const asyncMiddleware = async (req, res, next) => {
 /* Inicio */
 router.get('/backoffice/productos', asyncMiddleware, loginController.requireAuth, function(req, res) {
 	var usuario = req.cookies['usuario'];
-	res.render('backoffice/productos', { title: 'Cervecería SKOL', productos: res.response, layout: '/backoffice/menu-layout' });
+	res.render('backoffice/productos', { title: 'Cervecería SKOL | Backoffice', productos: res.response, layout: '/backoffice/menu-layout' });
 });
 
 // router.post('/backoffice/productos', function(req, res) {

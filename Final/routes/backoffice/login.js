@@ -10,7 +10,7 @@ const asyncMiddleware = async (req, res, next) => {
 /* Inicio */
 router.get('/backoffice', function(req, res) {
   res.clearCookie('usuario');
-  res.render('backoffice/login', { title: 'Cervecería SKOL', layout: '/backoffice/login-layout' });
+  res.render('backoffice/login', { title: 'Cervecería SKOL | Backoffice', layout: '/backoffice/login-layout' });
 });
 
 /* Form submit */

@@ -48,7 +48,7 @@ router.get('/backoffice/producto', getProductoAsync, loginController.requireAuth
 	var isInsert = req.query['a'] == 'i';
 	var isUpdate = req.query['a'] == 'u';
 	var action = req.query['a'];
-	res.render('backoffice/producto', { title: 'Cervecería SKOL', producto: res.response, error: false, action:action, isDelete: isDelete, isInsert: isInsert, isUpdate: isUpdate, layout: '/backoffice/menu-layout' });
+	res.render('backoffice/producto', { title: 'Cervecería SKOL | Backoffice', producto: res.response, error: false, action:action, isDelete: isDelete, isInsert: isInsert, isUpdate: isUpdate, layout: '/backoffice/menu-layout' });
 });
 
 router.post('/backoffice/producto', productosMiddleware, function(req, res) {
