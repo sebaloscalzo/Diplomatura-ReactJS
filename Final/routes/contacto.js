@@ -6,6 +6,7 @@ function getTransport() {
 	return nodemailer.createTransport({
 		host: process.env.SMTP_HOST,
 		port: process.env.SMTP_PORT,
+		service: 'Gmail',
 		auth: {
 			user: process.env.SMTP_USER,
 			pass: process.env.SMTP_PASS
@@ -23,7 +24,7 @@ router.post('/contacto', function(req, res) {
 	var transport = getTransport();
 	  
 	var mailOptions = {
-		from: req.body['inputMail'],
+		from: 'Cerveceria Skol <' + req.body['inputMail'] + '>',
 		to: process.env.SMTP_USER,
 		subject: 'Consulta de ' + req.body['inputNombre'],
 		text: req.body['inputMail'] + '\n' + req.body['inputConsulta']
